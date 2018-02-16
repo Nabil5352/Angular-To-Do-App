@@ -1,0 +1,10 @@
+<div class="task-details" *ngIf="task">
+	<h2> <strong>{{ task.title | uppercase }}</strong> Details</h2>
+	<div> <span> id: </span>{{ task.id }} </div>
+
+	<div>
+		<label>title:
+			<input [(ngModel)]="task.title" placeholder="name">
+		</label>
+	</div>
+</div>
